@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Property</title>
+    <style>
+        .f-container{
+            display: flex;
+            border: 2px solid black;
+            height: 45vh;
+        }
+        .f-item{
+            background-color: rgb(111, 77, 143);
+            border: 2px  solid rgb(158, 154, 154);
+            margin: 12px;
+            width: 122px;
+            height: 122px;
+        }
+        .f-container2{
+            display: flex;
+           flex-direction: column;
+            border: 2px solid black;
+            height: 45vh;
+            margin-top:30px;
+        }
+        .f-container3{
+            display: flex;
+           flex-direction:row-reverse;
+            border: 2px solid black;
+            height: 45vh;
+            margin-top:30px;
+        }
+        .f-container4{
+            display: flex;
+           flex-direction:column-reverse;
+            border: 2px solid black;
+            height: 45vh;
+            margin-top:30px;
+        }
+        .f-container5{
+            display: flex;
+            justify-content: center;
+            /* justify-content:flex-end; */
+            /* justify-content: space-around; */
+            /* justify-content: flex-end; */
+            border: 2px solid black;
+            height: 45vh;
+            margin-top:30px;
+        }
+        .f-container6{
+            display: flex;
+            align-items: center;
+            /* align-items: baseline; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            border: 2px solid black;
+            height: 45vh;
+            margin-top:30px;
+        }
+        .f-container7{
+            display: flex;
+            align-items: center;
+            border: 2px solid black;
+            height: 45vh;
+            margin-top:30px;
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+        }
+        .f-container8{
+            display: flex;
+            align-items: center;
+            border: 2px solid black;
+            height: 80vh;
+            margin-top:30px;
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+        }
+        .item1{
+            order: 3;
+        }
+        .item2{
+            order: 4;
+            flex-grow: 3;
+        }
+        .item3{
+            flex-shrink: 2;
+        }
+        .item4{
+            align-self: flex-start;
+            /* align-self: center; */
+            /* align-self: flex-end; */
+            /* align-self: baseline; */
+        }
+        .f-container9{
+            display: flex;
+            border: 2px solid black;
+            height: 80vh;
+            margin-top:30px;
+            flex-flow: row, wrap;
+        }
+    </style>
+</head>
+<body>
+    <!-- flex property -->
+    <div class="f-container">
+        <div class="f-item">1</div>
+        <div class="f-item">2</div>
+        <div class="f-item">3</div>
+        <div class="f-item">4</div>
+    </div>
+    <!-- flex-direction -->
+    <div class="f-container2">
+        <div class="f-item">1</div>
+        <div class="f-item">2</div>
+        <div class="f-item">3</div>
+        <div class="f-item">4</div>
+    </div>
+    <!-- row reverse -->
+    <div class="f-container3">
+        <div class="f-item">1</div>
+        <div class="f-item">2</div>
+        <div class="f-item">3</div>
+        <div class="f-item">4</div>
+    </div>
+    <!-- column reverse -->
+    <div class="f-container4">
+        <div class="f-item">1</div>
+        <div class="f-item">2</div>
+        <div class="f-item">3</div>
+        <div class="f-item">4</div>
+    </div>
+    <!-- justify property -->
+    <div class="f-container5">
+        <div class="f-item">1</div>
+        <div class="f-item">2</div>
+        <div class="f-item">3</div>
+        <div class="f-item">4</div>
+    </div>
+    <!-- align items -->
+    <div class="f-container6">
+        <div class="f-item">1</div>
+        <div class="f-item">2</div>
+        <div class="f-item">3</div>
+        <div class="f-item">4</div>
+    </div>
+    <!-- flex-wrap -->
+    <div class="f-container7">
+        <div class="f-item">1</div>
+        <div class="f-item">2</div>
+        <div class="f-item">3</div>
+        <div class="f-item">4</div>
+    </div>
+    
+    <!-- child properties -->
+    <!-- flex-grow -->
+    <!-- flex-shrink -->
+    <!-- order -->
+    <div class="f-container8">
+        <div class="f-item item1">1</div>
+        <div class="f-item item2">2</div>
+        <div class="f-item item3">3</div>
+        <div class="f-item item4">4</div>
+    </div>    
+    <!-- flex-flow -->
+    <div class="f-container9">
+        <div class="f-item">1</div>
+        <div class="f-item">2</div>
+        <div class="f-item">3</div>
+        <div class="f-item">4</div>
+    </div>
+</body>
+</html>
