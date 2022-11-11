@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+    <style>
+        /* display block properties */
+        header{
+            margin: auto;
+            border: 2px solid grey;
+            width: 50%;
+        }
+        img{
+            display: block;
+            margin: auto;
+            margin-bottom: 10px;
+            /* width: 34px; */
+        }
+        h3{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+        /* display inline block properties */
+        .container{
+            border: 4px solid rgb(218, 136, 136);
+            /* margin: auto; */
+            margin:10px auto;
+            width: 50%;
+            
+        }
+        .box{
+            border: 4px solid black;
+            background-color: grey;
+            margin: 4px;
+            padding: 20px;
+            display:inline-block;
+            width: 30%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- display block properties -->
+    <header class="top">
+        <img src="./images_folder/elena-email-girl.png" alt="">
+        <img src="./images_folder/elena-email-shoes.png" alt="">
+        <h3>Hello. Good Morning!! Lorem ipsum dolor sit.</h3>
+    </header>  
+      <!-- display inline block property -->
+      <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deleniti quidem exercitationem non fugit mollitia cum dolores fuga ipsum id.</p>
+        </div>
+
+        <div class="box">
+            <h4 class="heading">Heading2</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deleniti quidem exercitationem non fugit mollitia cum dolores fuga ipsum id.</p>
+        </div>
+
+        <div class="box">
+            <h4 class="heading">Heading3</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deleniti quidem exercitationem non fugit mollitia cum dolores fuga ipsum id.</p>
+        </div>
+      </div>
+
+</body>
+</html>

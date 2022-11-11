@@ -28,11 +28,22 @@
             margin: 10px 0;
             border:2px solid black;
             background-color: rgb(190, 189, 228);
+            position: relative;
         }
         #box02{
             position: relative;
             top:40px;
             left:40px;
+        }
+        #box04, #boxa{
+            /* padding: 10px; */
+            z-index: 1;
+        }
+        #box04{
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 2;
         }
         
         .container3{
@@ -49,13 +60,15 @@
         }
         #boxa{
             position:sticky;
-            top:3px;
+            /* top:3px; */
+            top: 160px;
         }
         .container4{
             border:2px solid black;
             background-color: rgb(60, 59, 105);
             height: 3550px;
         }
+        
     </style>
 </head>
 <body>
@@ -70,7 +83,7 @@
         <div class="box" id="box01">box1</div>
         <div class="box" id="box02">relative</div>
         <div class="box" id="box03">box3</div>
-        <div class="box" id="box44">box4</div>
+        <div class="box" id="box04">box4</div>
     </div>
     <div class="container3">
         <div class="box" id="boxa">sticky</div>
